@@ -12,3 +12,5 @@
     - ferrarimarco.atom
     - spotify
     - jetbrains-toolbox
+    # - geerlingguy.php
+    - geerlingguy.composer
