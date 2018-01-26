@@ -1,4 +1,6 @@
-# Personal infrastructure
+# Ubuntu Quick Dev Setup
+
+This is an opinioated Ansible setup for new Ubuntu machines. Everything is ordered in a way to make sure your up and running as fast as possible.
 
 ## Ansible install
 
