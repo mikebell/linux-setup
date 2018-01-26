@@ -1,0 +1,18 @@
+---
+- name: Download Jetbrains Toolbox
+  get_url:
+    url: https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.6.2914.tar.gz
+    dest: /tmp/jetbrains-toolbox-1.6.2914.tar.gz
+
+- name: Extract Jetbrains toolbox
+  unarchive:
+    src: /tmp/jetbrains-toolbox-1.6.2914.tar.gz
+    dest: /tmp
+
+- stat:
+    path: /usr/local/bin/jetbrains-toolbox
+  register: jt
+
+- name: Move Jetbrains toolbox
+  command: mv /tmp/jetbrains-toolbox-1.6.2914/jetbrains-toolbox /usr/local/bin
+  when: jt.stat.exists == False
