@@ -13,3 +13,8 @@
 ## Playbooks
 
     ansible-playbook -i hosts.ini playbooks/ubuntu.yml
+
+## Lazy Way
+
+    ./bootstrap roles
+    ./bootstrap run
