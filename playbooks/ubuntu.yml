@@ -7,5 +7,6 @@
 
   roles:
     - common
+    - vaulttec.zsh
     - cmprescott.chrome
     - ferrarimarco.atom

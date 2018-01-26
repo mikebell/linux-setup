@@ -1,0 +1,5 @@
+---
+zsh_users:
+  - digital
+zsh_ohmy_theme: candy
+zsh_ohmy_auto_update: true

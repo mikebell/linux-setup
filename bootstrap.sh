@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$1" == "roles" ]; then
-    ansible-galaxy install -r roles/requirements.yml --f
+    ansible-galaxy install -r roles/requirements.yml
 fi
 
 if [ "$1" == "run" ]; then
