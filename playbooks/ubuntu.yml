@@ -1,0 +1,11 @@
+---
+
+- name: ubuntu.yml | All roles
+  hosts: ubuntu
+  connection: local
+  become: yes
+
+  roles:
+    - common
+    - cmprescott.chrome
+    - ferrarimarco.atom

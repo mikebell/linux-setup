@@ -1,0 +1,48 @@
+---
+nginx_vhosts:
+  # - listen: "80"
+  #   server_name: "geekmentalhelp.com"
+  #   return: "301 https://geekmentalhelp.com$request_uri"
+  #   filename: "agency.weareconvivio.com.80.conf"
+  #- listen: "443 ssl http2"
+  - listen: "80"
+    server_name: "gmh.mikebell.io"
+    access_log: "/var/log/nginx/geekmentalhelp.com-access.log"
+    error_log: "/var/log/nginxgeekmentalhelp.com-error.log"
+    filename: "geekmentalhelp.com.conf"
+    root: "/var/www/geekmentalhelp.com/current/web"
+    index: "index.php"
+    extra_parameters: |
+      # ssl_certificate /etc/letsencrypt/live/geekmentalhelp.com/fullchain.pem;
+      # ssl_certificate_key /etc/letsencrypt/live/geekmentalhelp.com/privkey.pem;
+      location ~ \..*/.*\.php$ {
+          return 403;
+      }
+      location @rewrite {
+          rewrite ^/(.*)$ /index.php?q=$1;
+      }
+      location / {
+            index index.php;
+            try_files $uri $uri/ @rewrite;
+            expires max;
+      }
+      location @rewrite {
+            rewrite ^/(.*)$ /index.php?q=$1;
+      }
+      location ~ \.php$ {
+          fastcgi_split_path_info ^(.+\.php)(/.+)$;
+          fastcgi_pass 127.0.0.1:9000;
+          fastcgi_index index.php;
+          fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+          include fastcgi_params;
+      }
+
+mysql_databases:
+  - name: gmh
+    encoding: utf8
+    collation: utf8_general_ci
+mysql_users:
+  - name: "{{ vault_mysql_gmh_user }}"
+    host: "%"
+    password: "{{ vault_mysql_gmh_pass }}"
+    priv: "gmh.*:ALL"

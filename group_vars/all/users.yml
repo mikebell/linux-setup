@@ -1,0 +1,7 @@
+---
+ssh_users:
+  - name: mbell
+    key: https://github.com/mikebell.keys
+
+sudoers:
+  - mbell
