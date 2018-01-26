@@ -12,3 +12,4 @@ apt_packages:
   - php7.1-xml
   - php7.1-opcache
   - php7.1-mbstring
+  - chrome-gnome-shell
