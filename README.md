@@ -8,15 +8,7 @@ This is an opinionated Ansible setup for new Ubuntu machines. Everything is orde
     sudo apt update
     sudo apt install ansible
 
-## Roles
-
-    ansible-galaxy install -r roles/requirements.yml --force
-
-## Playbooks
-
-    ansible-playbook -i hosts.ini playbooks/ubuntu.yml
-
-## Lazy Way
+## Run
 
     ./bootstrap roles
     ./bootstrap run
