@@ -1,0 +1,9 @@
+---
+- name: Add Albert ppa
+  apt_repository:
+    repo: 'ppa:flexiondotorg/albert'
+
+- name: Install albert
+  apt:
+    name: albert
+    update_cache: yes
