@@ -19,3 +19,5 @@ apt_packages:
   - network-manager-openvpn
   - network-manager-openvpn-gnome
   - openvpn-systemd-resolved
+  - nfs-common
+  - nfs-kernel-server
