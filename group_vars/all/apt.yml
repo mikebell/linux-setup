@@ -15,3 +15,7 @@ apt_packages:
   - chrome-gnome-shell
   - gnome-tweak-tool
   - arc-theme
+  - openvpn
+  - network-manager-openvpn
+  - network-manager-openvpn-gnome
+  - openvpn-systemd-resolved
