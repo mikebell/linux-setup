@@ -22,3 +22,4 @@ apt_packages:
   - nfs-common
   - nfs-kernel-server
   - fonts-hack-ttf
+  - tmux
