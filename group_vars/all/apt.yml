@@ -21,3 +21,4 @@ apt_packages:
   - openvpn-systemd-resolved
   - nfs-common
   - nfs-kernel-server
+  - fonts-hack-ttf
