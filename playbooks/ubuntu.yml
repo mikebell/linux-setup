@@ -11,7 +11,6 @@
     - cmprescott.chrome
     - wtanaka.slack
     - ferrarimarco.atom
-    - spotify
     - jetbrains-toolbox
     # - geerlingguy.php
     - geerlingguy.composer
@@ -20,3 +19,4 @@
     - albert
     - angstwad.docker_ubuntu
     - rvm_io.ruby
+    # - iknite.spotify
