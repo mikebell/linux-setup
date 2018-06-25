@@ -12,12 +12,12 @@ apt_packages:
   # - php7.1-xml
   # - php7.1-opcache
   # - php7.1-mbstring
-  - chrome-gnome-shell
-  - gnome-tweak-tool
-  - arc-theme
+  # - chrome-gnome-shell
+  # - gnome-tweak-tool
+  # - arc-theme
   - openvpn
   - network-manager-openvpn
-  - network-manager-openvpn-gnome
+  # - network-manager-openvpn-gnome
   - openvpn-systemd-resolved
   - nfs-common
   - nfs-kernel-server
