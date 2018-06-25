@@ -18,7 +18,7 @@ apt_packages:
   - openvpn
   - network-manager-openvpn
   # - network-manager-openvpn-gnome
-  - openvpn-systemd-resolved
+  # - openvpn-systemd-resolved
   - nfs-common
   - nfs-kernel-server
   - fonts-hack-ttf
