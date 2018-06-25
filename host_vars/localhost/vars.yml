@@ -1,6 +1,6 @@
 ---
 zsh_users:
-  - digital
+  - mbell
 zsh_ohmy_theme: candy
 zsh_ohmy_auto_update: true
 
@@ -9,6 +9,6 @@ vagrant_sha256: "2f9498a83b3d650fcfcfe0ec7971070fcd3803fad6470cf7da871caf2564d84
 
 rvm1_rubies:
   - 'ruby-2.5.0'
-rvm1_user: 'digital'
+rvm1_user: 'mbell'
 
 virtualbox_apt_package: "virtualbox"
