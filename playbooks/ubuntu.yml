@@ -15,7 +15,7 @@
     # - geerlingguy.php
     # - geerlingguy.composer
     # - FGtatsuro.vagrant
-    - kennyr707.zoom
+    # - kennyr707.zoom
     - albert
     - angstwad.docker_ubuntu
     # - rvm_io.ruby
