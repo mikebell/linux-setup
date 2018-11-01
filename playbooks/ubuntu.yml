@@ -12,8 +12,8 @@
     - wtanaka.slack
     - ferrarimarco.atom
     - jetbrains-toolbox
-    - geerlingguy.php
-    - geerlingguy.composer
+    # - geerlingguy.php
+    # - geerlingguy.composer
     # - FGtatsuro.vagrant
     - kennyr707.zoom
     - albert
