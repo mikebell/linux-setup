@@ -14,7 +14,7 @@
     - jetbrains-toolbox
     - geerlingguy.php
     - geerlingguy.composer
-    - FGtatsuro.vagrant
+    # - FGtatsuro.vagrant
     - kennyr707.zoom
     - albert
     - angstwad.docker_ubuntu
