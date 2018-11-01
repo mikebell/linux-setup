@@ -17,6 +17,7 @@
     # - FGtatsuro.vagrant
     # - kennyr707.zoom
     # - albert
-    - angstwad.docker_ubuntu
+    # - angstwad.docker_ubuntu
     # - rvm_io.ruby
     # - iknite.spotify
+    - gantsign.visual-studio-code
