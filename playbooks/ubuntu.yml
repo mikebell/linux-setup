@@ -10,7 +10,7 @@
     - vaulttec.zsh
     - cmprescott.chrome
     - wtanaka.slack
-    - ferrarimarco.atom
+      #- ferrarimarco.atom
     - jetbrains-toolbox
     # - geerlingguy.php
     # - geerlingguy.composer
